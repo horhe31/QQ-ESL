@@ -302,7 +302,6 @@ p {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        max-width: fit-content;
     }
     .container > section {
         flex: 1 1 100%;
