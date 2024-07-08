@@ -299,7 +299,7 @@ p {
 
 
 /* Responsive design */
-@media (max-width: 100px) {
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
         max-width: fit-content;
