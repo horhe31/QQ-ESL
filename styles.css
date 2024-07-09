@@ -13,22 +13,9 @@ html {
   body {
     text-align: center;
     align-items: center;
-        --s: 90px; /* control the size*/
-        --c1: #ffffff;
-        --c2: #d6d4d5;
-        --c3: #949494;
-        
-        --_g: 0 120deg,#0000 0;
-        background:
-        conic-gradient(from    0deg at calc(500%/6) calc(100%/3),var(--c3) var(--_g)),
-        conic-gradient(from -120deg at calc(100%/6) calc(100%/3),var(--c2) var(--_g)),
-        conic-gradient(from  120deg at calc(100%/3) calc(500%/6),var(--c1) var(--_g)),
-        conic-gradient(from  120deg at calc(200%/3) calc(500%/6),var(--c1) var(--_g)),
-        conic-gradient(from -180deg at calc(100%/3) 50%,var(--c2)  60deg,var(--c1) var(--_g)),
-        conic-gradient(from   60deg at calc(200%/3) 50%,var(--c1)  60deg,var(--c3) var(--_g)),
-        conic-gradient(from  -60deg at 50% calc(100%/3),var(--c1) 120deg,var(--c2) 0 240deg,var(--c3) 0);
-        background-size: calc(var(--s)*1.732) var(--s);
-    }
+    background: rgb(234,234,219);
+    background: linear-gradient(176deg, rgba(234,234,219,1) 0%, rgba(172,166,115,1) 100%);
+  }
 
 
     header .nav {
@@ -63,8 +50,8 @@ html {
         left: 0;
         width: 100%;
         padding: 15px 200px;
-        background: rgb(208,5,28);
-        background: linear-gradient(83deg, rgba(208,5,28,1) 0%, rgba(78,1,10,1) 100%);
+        background: rgb(81,69,54);
+        background: linear-gradient(90deg, rgba(81,69,54,1) 0%, rgba(45,36,27,1) 100%);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       }
       .nav,
@@ -118,7 +105,7 @@ html {
         left: 15px;
         top: 50%;
         left: 15px;
-        color: #ee1f30;
+        color:#2c241c;
         transform: translateY(-50%);
       }
       .search-box input {
@@ -172,8 +159,8 @@ html {
           padding-top: 100px;
           row-gap: 30px;
           flex-direction: column;
-          background-color: #11101d;
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          background-color: #2c241c;
+          box-shadow: 0 2px 50px  #fff;
           transition: all 0.4s ease;
           z-index: 100;
         }
@@ -215,14 +202,13 @@ html {
 }
 
 .container > section {
-    background: rgb(208,5,28);
-    background: linear-gradient(180deg, rgba(208,5,28,0.5760679271708684) 2%, rgba(171,9,27,1) 32%, rgba(141,15,29,1) 100%);
+    background: #514536;
     border-radius: 18px;
     padding: 25px;
     margin: 20px;
     margin-top: 20px;
     line-height: 25px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 10px 15px 30px rgb(87, 87, 87);
     flex: 1 1 calc(33% - 40px);
     min-width: 350px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -230,11 +216,11 @@ html {
 }
 
 .container > div {
-    background: rgba(141,15,29,1);
+    background: #514536;
     border-radius: 13px;
     padding: 20px;
     margin: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 10px 15px 30px rgb(87, 87, 87);
     min-width: 350px;
     transition: transform 0.3s, box-shadow 0.3s;
     color: #fff0f2;
@@ -245,7 +231,7 @@ html {
     word-spacing: 2px;
 }
 .freecon li:hover{
-    font-size: 30px;
+    font-size: 25px;
 }
 .assessm li{
     padding-left: 30px;
@@ -261,7 +247,7 @@ h2 {
     padding-bottom: 20px;
     line-height: 50px;
     font-size: 2rem;
-    color: #fff0f2;
+    color: #f6f5f0;
 }
 
 ul {
@@ -269,11 +255,11 @@ ul {
     padding-left: 20px;
     text-align: left;
     line-height: 20px;
-    color: #ffdee2;
+    color:#d4d3b4;
 }
 p3 {
     font-size:smaller;
-    color: #ff5d6f;
+    color: #82754c;
 }
 
 h4 {
@@ -287,11 +273,11 @@ h4 {
 }
 h4:hover{
     transition: .5s;
-    font-size: 30px;
+    font-size: 25px;
     padding: 10px;
 }
 p {
-    color: #ffdee2;
+    color: #f6f5f0;
     font-size: 20px;
     text-align: left;
     text-decoration: underline;
@@ -306,6 +292,9 @@ p {
     .container > section {
         flex: 1 1 100%;
     }
+    .container > div {
+      flex: 1 1 100%;
+  }
 }
 
 
@@ -313,6 +302,7 @@ p {
 /* CONTACT */
 
 #contact {
+    color: #2c241c;
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -333,7 +323,7 @@ p {
     justify-content: center;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.5rem solid;
-    border-color: #f70b26;
+    border-color:#514536;
     background: (250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
@@ -347,7 +337,7 @@ p {
     margin: 1rem;
   }
   #contact a {
-    color: black;
+    color: #2c241c;
     margin: 10px;
   }
 
@@ -363,20 +353,19 @@ flex-wrap: wrap;
 
 
 
-
-
   /* FOOTER */
   footer {
     padding: 20px;
-    color: #110f0f;
+    color: #2c241c;
     text-align: center;
 }
 
 footer a:hover {
+    font-size: larger;
     text-decoration: underline;
 }
 .external-links {
-    background: #ffc2c9;
+    background:#d3d2b4;
     padding: 20px;
     margin: 20px;
     margin-top: 40px;
@@ -387,7 +376,7 @@ footer a:hover {
 
 .external-links h2 {
     font-size: 50px;
-    color: #4e010a;
+    color: #2d241b;
 }
 
 .external-links ul {
@@ -402,7 +391,7 @@ footer a:hover {
 
 .external-links a {
     padding-top: 20px;
-    color: #8d0f1d;
+    color: #62523e;
     text-decoration: none;
 }
 
@@ -413,13 +402,15 @@ footer a:hover {
 
 
 h3 {
+    padding-top: 10px;
     text-align: center;
-    color: #4e010a;
+    color: #2d241b;
     font-size: .9rem;
 }
 
 footer p {
     text-align: center;
+    color: #2c241c;
 }
 
 footer .nav-links {
@@ -435,7 +426,7 @@ footer .nav-links {
 }
 
 footer .nav-links a{
-    color: black;
+    color: #5a4d39;
     margin-top: 0px;
     font-size: 1.5rem;
     font-weight: bold;
@@ -444,11 +435,12 @@ footer .nav-links a{
 }
 footer .nav-links a:hover {
     font-size: 30px;
-    color: #ff5d6f;
+    color:#514536;
 }
 
 @media screen and (max-width: 1000px) {
     footer {
+    align-items: center;
     height: 50vh;
     font-size: 30px;
     margin-top: 5px;
@@ -468,7 +460,7 @@ footer .nav-links a:hover {
         padding-top: 10px;
     }
     footer h3{
-        padding-top: 50px;
+        padding-top: 70px;
         bottom: 20px;
     }
 }
@@ -592,15 +584,18 @@ footer.dark-mode nav a:hover {
 }
 
 body.dark-mode h3 {
-    color: #ffdee2;
+    color:#ffffff;
 }
 
 body.dark-mode p{
-    color: #ffdee2;
+    color: #ffffff;
 }
 body.dark-mode p3{
-    color: #999999;
+    color:#ffffff;
 }
 body.dark-mode #contact a {
-    color: #ffdee2;
+    color:#ffffff;
+}
+body.dark-mode #contact {
+    color:#ffffff;
 }
